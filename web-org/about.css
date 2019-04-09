@@ -1,0 +1,100 @@
+/*關於*/
+.About-All{
+    margin: 60px 40px;
+    font-size: 0;
+    position: relative;
+}
+
+/*左邊文字*/
+.About-content{
+    display: inline-block;
+    width: 450px;
+    vertical-align: top;
+}
+.About-content h3{
+    color: #bc6161;
+    padding-bottom: 30px;
+}
+.About-content p{
+    padding-bottom: 30px;
+}
+.About-content h5{
+    padding-bottom: 5px;
+    color:#566da1; 
+}
+.About-pic{
+    display: inline-block;
+    width: 310px;
+    margin-left: 40px;
+    vertical-align: top;
+}
+
+/*右邊圖*/
+.About-pic img{
+    width: 100%;
+}
+.About-pic>div{
+    box-shadow: 5px 5px 10px #bbb;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+}
+.Ap-p1{
+    width: 250px;
+    height: 250px;
+    left: 20px;
+    top: -40px;
+}
+.Ap-p2{
+    width: 100px;
+    height: 100px;
+    right: -200px;
+    top: -20px;
+}
+.Ap-p3{
+    width: 150px;
+    height: 150px;
+    right: -50px;
+    top: -20px;
+}
+.Ap-p4{
+    width: 100px;
+    height: 100px;
+    top: 70px;
+    left: 20px;
+}
+.Ap-p5{
+    width: 200px;
+    height: 200px;
+    top: 20px;
+    right: -70px;
+}
+
+/*補圖位*/
+.bgck-plum-red{
+    top: 330px;
+    right: 20px;
+    transform: rotate(-30deg);
+}
+.bgck-Straw{
+    top: 870px;
+    right: 40px;
+    transform: rotate(5deg);
+}
+.bgck-Cherry{
+    top: 1150px;
+    left: 600px;
+    transform: rotateX(5deg) rotateY(180deg);
+}
+
+/*補動畫*/
+.bgck-Straw{
+    animation:mymove 7s infinite;
+    z-index: 3;
+}
+@keyframes mymove
+{
+0% {top:870px;}
+50% {top:820px;}
+100% {top:870px;}
+}

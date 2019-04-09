@@ -1,0 +1,88 @@
+/*訊息*/
+.Newsinside-All-list{
+    /*給標籤用*/
+    position: relative;
+}
+.Newsinside-list{
+    /*內層*/
+    margin: 0px auto;
+    margin-top: 60px; 
+    width: 570px;
+    padding: 40px;
+    background-color: #ddd;
+    border-radius: 10px;
+    box-shadow: 5px 10px 15px #ccc;
+    position: relative;
+}
+.Newsinside-list h3{
+    /*icon*/
+    padding: 40px 0px 0px 0px;
+    color: #bc6161;
+}
+h3.Newsin-text-title{
+    /*標題*/
+    padding: 10px 0px 10px 0px;
+    color: #bc6161;
+}
+.Newsinside-list h6{
+    padding: 0px 40px 10px 0px;
+    color: #566da1;
+}
+.Newsinside-list p{
+    padding: 0px 0px 100px 0px;
+}
+/*圖*/
+.Newsin-img{
+    width: 100%;
+    height: 400px;
+}
+.Newsin-btn-pic{
+    font-size: 0;
+    padding-top: 10px;
+    border-top:2px solid #566da1;
+}
+.Newsin-bp{
+    display: inline-block;
+    width: 180px;
+    height: 150px;
+    padding: 5px;
+}
+
+/*標籤*/
+.Newsin-tag{
+    position: absolute;
+    top: -30px;
+    left: -35px;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    background-color: #9d5aa3;
+    border-radius: 50%;
+    color: #fff;
+    opacity: 0.8;  
+    text-align: center;
+    font-size: 20px;
+}
+
+/*補圖位*/
+.bgck-Straw{
+    top: 870px;
+    right: 40px;
+    transform: rotate(5deg);
+}
+.bgck-Cherry{
+    top: 1300px;
+    left: 50px;
+    transform: rotateX(5deg) rotateY(180deg);
+}
+/*補動畫*/
+.bgck-Straw{
+    animation:mymove 7s infinite;
+    z-index: 3;
+}
+@keyframes mymove
+{
+0% {top:870px;}
+50% {top:820px;}
+100% {top:870px;}
+}

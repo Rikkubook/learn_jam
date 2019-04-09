@@ -1,0 +1,234 @@
+/*果醬*/
+.Jam-All-list{
+    width: 760px;
+    margin:auto;
+    margin-top: 40px;
+    font-size: 0;
+    text-align: center;
+}
+.Jam-list{
+    width: 150px;
+    margin: 10px;
+    margin-bottom: 25px;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+}
+.Jamli-img span{
+    /*加入購物車*/
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    left: 0;
+    bottom: -50px;
+    background: rgba(0,0,0,0);
+    font-size: 14px;
+    color:#fff;
+}
+
+/*果醬圖*/
+.Jamli-img{
+    border:solid 3px #bc6161;
+    overflow: hidden;
+    border-radius: 50%;
+    width: 136px;
+    height: 136px;
+    background-color: #fff;
+    display: inline-block;
+    position: relative;
+}
+.Jamli-img:hover{
+    border:solid 3px #566da1;
+    transition:1s;
+}
+.Jamli-img img{
+    width: 65%;
+    height: auto;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%); 
+}
+.Jamli-img:hover img{
+    width: 90%;
+    height: auto;
+    transition:1s;
+    z-index:1;
+}
+.Jamli-img:hover span{
+    left: 0;
+    bottom: 0px;
+    background: rgba(0,0,0,0.5);
+    transition: 1s;
+    z-index:2;
+}
+.box img{
+    width:150%;
+    height: auto;
+    position:relative;
+    top:50%;
+    transform:translateY(-50%); 
+}
+.box:hover img{
+    width: 200%;
+    height: auto;
+    transition:1s;
+    z-index:1;
+}
+
+/*商品詳情*/
+.Jam-read-more{
+    width: 90px;
+    padding: 2px 5px;
+    margin:auto;
+    margin-top: 10px;
+    border:solid 2px #bc6161;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.Jam-read-more:hover{
+    transition:0.5s;
+    background-color: #6b88c2;
+    border:solid 2px #6b88c2;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.Jam-read-more:hover p{
+    color: #fff;
+    transition:0.5s;
+}
+.Jam-read-more p{
+    color:#bc6161;
+    font-size: 14px;
+}
+
+/*字體*/
+.Jam-list h5{
+    padding: 10px 0px 0px 0px;
+    color: #566da1;
+}
+
+.Jam-list h6{
+    font-size: 14px;
+}
+
+/*標籤*/
+.Jam-tag{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 15px;
+    line-height: 50px;
+    background-color: #9d5aa3;
+    opacity: 0.8;
+    text-align: center;
+    z-index: 3;
+}
+.hot .Jam-tag{
+    background-color:  #dd9393;
+}
+.notice .Jam-tag{
+    background-color:  #ff8f59;
+}
+.notice h6>span{
+    color:#ff8f59;
+    text-decoration: line-through;
+}
+.end .Jam-tag{
+    background-color:  #7b7b7b;
+}
+.end .Jamli-img:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #7b7b7b;
+    opacity: 0.3;
+}
+.end .Jamli-img{
+    border:solid 3px #7b7b7b;
+    transition:1s;
+}
+.end .Jamli-img:hover{
+    border:solid 3px #7b7b7b;
+    transition:1s;
+}
+.end img{
+    filter:grayscale(0.9);
+}
+.end h5,.end h6{
+    color: #777;
+}
+.end .Jamli-img:hover span{
+    left: 0;
+    bottom: -80px;
+    background: rgba(0,0,0,0.5);
+    transition: 1s;
+    z-index:2;
+}
+.end .Jam-read-more{
+    width: 90px;
+    padding: 2px 5px;
+    margin:auto;
+    margin-top: 5px;
+    border:solid 2px #777;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.end .Jam-read-more p{
+    color:#777;
+}
+.end .Jam-read-more:hover{
+    transition:0.5s;
+    background-color: #777;
+    border:solid 2px #777;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+}
+.end .Jam-read-more:hover p{
+    color:#fff;
+}
+
+/*補圖位*/
+.bgck-plum-red{
+    top: 330px;
+    right: 20px;
+    transform: rotate(-30deg);
+}
+.bgck-Straw{
+    top: 870px;
+    right: 40px;
+    transform: rotate(5deg);
+}
+.bgck-Cherry{
+    top: 1300px;
+    left: 20px;
+    transform: rotateX(5deg) rotateY(180deg);
+}
+
+/*補動畫*/
+.bgck-Straw{
+    animation:mymove 7s infinite;
+    z-index: 3;
+}
+@keyframes mymove
+{
+0% {top:870px;}
+50% {top:820px;}
+100% {top:870px;}
+}

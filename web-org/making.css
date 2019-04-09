@@ -1,0 +1,213 @@
+/*補底圖*/
+.bgck-lin-2{
+    width: 960px;
+    top: 550px;
+    left: 0px;
+}
+
+/*影片*/
+.Making-video{
+    margin-bottom: 100px;
+    width: 600px;
+    padding: 0 100px;
+    height:auto;
+}
+video{
+    width: 100%;
+}
+/*製作*/
+.Making-list{
+    margin: 60px 40px 0px;
+}
+.Making-list h3,.Making-raw h3{
+    color: #bc6161;
+}
+.Making-list h3 span{
+    font-size: 15px;
+    color: #bc6161;
+    opacity: 0.8;
+}
+.Making-process{
+    /*共用撐相對位置*/
+    margin-top: 20px;
+    position: relative;
+    height: 450px;
+}
+.Making-process h5{
+    color:#566da1;
+    margin-bottom: 10px;
+}
+
+/*相對位置*/
+.Mp-img{
+    width: 135px;
+    height: 135px;
+    border-radius: 50%;
+    background-color: #aaa;
+    box-shadow: 5px 10px 15px #bbb;
+/*    border:solid 3px #bc6161;*/
+    overflow: hidden;
+}
+.Mp2 h5,.Mp4 h5,.Mp6 h5{
+    position: absolute;
+    right: -25px;
+    bottom: -40px;
+}
+.Mp1{
+    position: absolute;
+    top: 50px;
+    left: -10px;
+}
+.Mp2{
+    position: absolute;
+    top: 200px;
+    left: 120px;
+}
+.Mp3{
+    position: absolute;
+    top: 50px;
+    left: 270px;
+}
+.Mp4{
+    position: absolute;
+    top: 200px;
+    left: 410px;
+}
+.Mp5{
+    position: absolute;
+    top: 50px;
+    left: 540px;
+}
+.Mp6{
+    position: absolute;
+    top: 200px;
+    left: 670px;
+}
+
+
+/*提示文字*/
+.Mppic:hover .Mp-about,
+.Mppic:hover .bot{
+    opacity: 1;
+    transition: 0.5s;
+}
+.Mp-about{
+    width: 120px;
+    height: 90px;
+    background-color: #d0d0d0;
+    border-radius: 50%;
+    padding: 40px;
+    position: absolute;
+    padding: 30px;
+    top: -40px;
+    left: 80px;
+    opacity: 0;
+/*    overflow: hidden;*/
+}
+.bot{
+    
+    position: absolute;
+    top: 90px;
+    left: -90px;
+    opacity: 0;
+}
+.Mp-about:before{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    left: 20px;
+    bottom: 10px;
+    transform: rotate(60deg);
+    border-radius: 3px;
+    border:solid 10px;
+    border-color: #d0d0d0 #d0d0d0 transparent transparent;
+}
+.bot:before {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 0;
+    top: 5px;
+    left: 140px;
+    transform: rotate(245deg);
+    border-radius: 3px;
+    border:solid 10px;
+    border-color: #d0d0d0 #d0d0d0 transparent transparent;
+}
+.Mp-about p{
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+/*下方共用屬性*/
+.Mak-raw-all{
+    margin: 0px 40px; 
+}
+/*原料果醬圖*/
+.Mak-jar{
+    margin-top: 100px;
+    position: relative;
+}
+.raw-pic{
+    height: 350px;
+}
+.raw-pic img{
+    object-position: 0px 0px;
+}
+
+/*原料果醬文字*/
+.rea-info{
+    position: absolute;
+    display: inline-block;
+    width: 200px;
+}
+.rea-info h5{
+    color: #566da1; 
+}
+.in1{
+    left: 0px;
+    top: 100px;
+}
+.in2{
+    left: 250px;
+    top: 0px;
+}
+.in3{
+    right:50px;
+    top:0px;
+}
+.in4{
+    right: -100px;
+    top: 100px;
+}
+/*補圖位*/
+.bgck-plum-red{
+    top: 330px;
+    right: 20px;
+    transform: rotate(-30deg);
+}
+.bgck-Straw{
+    top: 870px;
+    right: 40px;
+    transform: rotate(5deg);
+}
+.bgck-Cherry{
+    top: 1100px;
+    left: 20px;
+    transform: rotateX(5deg) rotateY(180deg);
+}
+/*補動畫*/
+.bgck-Straw{
+    animation:mymove 7s infinite;
+    z-index: 3;
+}
+@keyframes mymove
+{
+0% {top:870px;}
+50% {top:820px;}
+100% {top:870px;}
+}

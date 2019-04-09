@@ -1,0 +1,141 @@
+/*聯絡*/
+.Contact-All{
+    margin: 40px 40px;
+    font-size: 0;
+    position: relative;
+}
+
+/*表單*/
+form{
+    position: absolute;
+    left: 355px;
+    top: 110px;
+    text-align: center;
+}
+form>h3{
+    color: #bc6161;
+}
+form>p{
+    margin-top: 5px;
+    text-align: left;
+}
+input{
+    border:0px;
+    border-bottom:solid 2px #ccc;
+    width: 200px;
+}
+
+input.sub{
+    width: 70px;
+    font-family: 微軟正黑體;
+    padding: 5px 20px;
+    font-size: 16px;
+    font-weight: 700;
+    text-decoration: none;
+    color: #fff;
+    background-color: #d99d9e;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 5px 5px 15px #bbb;
+}
+input.sub:hover{
+    background-color: #6b88c2;
+    transition:0.5s;
+}
+textarea{
+    width: 250px;
+    height: 100px;
+    resize: none;
+    border:2px solid #ccc;
+}
+
+.Contact-All h5{
+    color: #566da1;
+    margin-bottom: 5px;
+}
+
+.Contact-us{
+    background-image: url(img/Contact/Cont1-01.png);
+    background-size: cover;
+    height: 500px;
+}
+
+.Contact-store{
+    margin-top: 60px;
+    padding-top: 40px;
+    padding: 20px;
+    position: relative;
+    height: 300px;
+}
+.Ct-stor-con{
+    width: 380px;
+}
+.Ct-st-img{
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: 5px 10px 15px #bbb;
+}
+.Ct-map-con{
+    width: 300px;
+    margin-top: 20px;
+    position: absolute;
+}
+.Ct-map-con p{
+    font-size: 14px;
+    color: #566da1;
+}
+.Contact-map{
+    padding-top: 40px;
+}
+.Ct-map-img{
+    position: absolute;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 180px;
+    height: 180px;
+    right: 200px;
+    bottom: -30px;
+    box-shadow: 5px 10px 15px #bbb;
+    border:solid 3px #bc6161;
+    display: block;
+}
+.Ct-map-img:hover{
+    border:solid 3px #566da1;
+}
+
+/*補圖位*/
+.bgck-grape{
+    top: 480px;
+}
+.bgck-plum-red{
+    top: 330px;
+    right: 20px;
+    transform: rotate(-30deg);
+}
+.bgck-Straw{
+    top: 870px;
+    right: 40px;
+    transform: rotate(5deg);
+}
+.bgck-Cherry{
+    top: 1200px;
+    left: 150px;
+    transform: rotateX(5deg) rotateY(180deg);
+}
+
+/*補動畫*/
+.bgck-Straw{
+    animation:mymove 7s infinite;
+    z-index: 3;
+}
+@keyframes mymove
+{
+0% {top:870px;}
+50% {top:820px;}
+100% {top:870px;}
+}

@@ -1,0 +1,143 @@
+
+.News-All-list{
+    font-size: 0;
+    margin: 30px 40px;
+}
+.News-list{
+    display: inline-block;
+    width: 196px;
+    height: 290px;
+    padding: 20px 20px 40px 20px;
+    margin: 20px 15px;
+    vertical-align: top;
+    border-radius: 10px;
+    background-color: #dedede;
+    box-shadow: 5px 5px 10px #bbb;
+    position: relative;
+}
+.News-text h4{
+    padding: 20px 0px 5px;
+    color: #bc6161;
+}
+.News-text h6{
+    color: #566da1;
+    font-size: 14px;
+    margin-bottom: 5px;
+}
+.News-text p{
+    height: 80px;
+    overflow: hidden;
+
+}
+
+/*圖*/
+.News-img{
+    width: 100%;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 10px;
+    position: relative;
+    /*標籤定位*/
+    display: block;
+}
+.News-img:before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    opacity: 0;
+    }
+.News-img:after{
+    content: 'More';
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    margin-bottom: 0; 
+    width: 100px;
+    height: 70px;
+    line-height: 70px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    }
+.News-img:hover:before{
+    opacity: 0.5;
+    z-index: 2;
+    transition: 0.5s;
+    }
+.News-img:hover:after{
+    opacity: 1;
+    z-index: 3;
+    transition: 0.5s;
+    }
+.News-img:hover img{
+    transform: scale(1.1);
+    transition: 0.5s;
+    z-index: -1;
+    }
+
+/*標籤*/
+.News-tag{
+    position: absolute;
+    top: -10px;
+    left: -20px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background-color: #9d5aa3;
+    color: #fff;
+    font-size: 15px;
+    text-align: center;
+    opacity: 0.8;  
+    z-index: 3;
+}
+.notice .News-tag{
+    background-color:  #ff8f59;
+}
+.end .News-tag{
+    background-color:  #7b7b7b;
+}
+.end:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background-color: #7b7b7b;
+    opacity: 0.3;
+}
+.end img{
+-webkit-filter:grayscale(0.9);
+}
+.end h4,.end h6{
+    color: #777;
+}
+
+/*補圖位*/
+.bgck-Straw{
+    top: 870px;
+    right: 40px;
+    transform: rotate(5deg);
+}
+
+/*補動畫*/
+.bgck-Straw{
+    animation:mymove 7s infinite;
+    z-index: 3;
+}
+@keyframes mymove
+{
+0% {top:870px;}
+50% {top:820px;}
+100% {top:870px;}
+}
